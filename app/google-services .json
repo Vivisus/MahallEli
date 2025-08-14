@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588420495998",
+    "project_id": "mahalleli-243cb",
+    "storage_bucket": "mahalleli-243cb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588420495998:android:da5c2d2440b50378a1b62f",
+        "android_client_info": {
+          "package_name": "com.example.mahalleli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCQJd5h6me4oPq8lnjSK1Hq3hpuJL9sX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

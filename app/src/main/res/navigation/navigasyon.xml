@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasyon"
+    app:startDestination="@id/anasayfa">
+    <fragment
+        android:id="@+id/anasayfa"
+        android:name="com.example.mahalleli.anasayfadosyalari.Anasayfa"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" />
+    <fragment
+        android:id="@+id/arama"
+        android:name="com.example.mahalleli.anasayfadosyalari.Arama"
+        android:label="fragment_arama"
+        tools:layout="@layout/fragment_arama" />
+    <fragment
+        android:id="@+id/kullanici"
+        android:name="com.example.mahalleli.anasayfadosyalari.Kullanici"
+        android:label="fragment_kullanici"
+        tools:layout="@layout/fragment_kullanici">
+        <action
+            android:id="@+id/action_kullanici_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+        <action
+            android:id="@+id/action_kullanici_to_profileDetailsFragment"
+            app:destination="@id/profileDetailsFragment" />
+
+        <action
+            android:id="@+id/action_kullanici_to_becomeSellerFragment"
+            app:destination="@id/becomeSellerFragment" />
+
+        <action
+            android:id="@+id/action_kullanici_to_sellerReviewsFragment"
+            app:destination="@id/sellerReviewsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/becomeSellerFragment"
+        android:name="com.example.mahalleli.adapterdosyalari.BecomeSellerFragment"
+        android:label="fragment_become_seller"
+        tools:layout="@layout/fragment_become_seller" />
+    <fragment
+        android:id="@+id/profileDetailsFragment"
+        android:name="com.example.mahalleli.adapterdosyalari.ProfileDetailsFragment"
+        android:label="fragment_profile_details"
+        tools:layout="@layout/fragment_profile_details" />
+    <fragment
+        android:id="@+id/sellerReviewsFragment"
+        android:name="com.example.mahalleli.adapterdosyalari.SellerReviewsFragment"
+        android:label="fragment_seller_reviews"
+        tools:layout="@layout/fragment_seller_reviews" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mahalleli.adapterdosyalari.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

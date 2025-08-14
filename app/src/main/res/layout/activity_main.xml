@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblue"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/girisyapButton"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background=""
+        android:text="GİRİŞ YAP"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kayitolButton"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/white"
+        android:foregroundTint="#AD9C9C"
+        android:text="KAYIT OL"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
